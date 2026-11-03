@@ -19,3 +19,12 @@ export function plaid() {
     })
   );
 }
+
+export function webhookUrl() {
+  return `${process.env.NEXT_PUBLIC_SITE_URL ?? "https://myownhome.propmatrix.ai"}/api/plaid/webhook`;
+}
+
+// Plaid (axios) errors carry the API error in response.data; anything else falls back to the JS message.
+export function plaidError(e: any): { code?: string; message: string } {
+  return { code: e?.response?.data?.error_code, message: e?.response?.data?.error_message ?? e?.message ?? "Plaid request failed" };
+}

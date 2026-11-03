@@ -1,0 +1,336 @@
+{
+  "retrieved": "2026-11-02",
+  "sources": {
+    "propertyTax": {
+      "name": "U.S. Census Bureau, American Community Survey 5-Year Estimates 2020-2024, tables B25103 (median real estate taxes paid) and B25077 (median owner-occupied home value), state level",
+      "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/",
+      "asOf": "ACS 5-year 2020-2024",
+      "note": "propertyTaxPct = median real estate taxes paid / median home value x 100 (effective rate, % of value per year). ACS top-codes taxes at $10,001 and values at $2,000,001, so the rate reads slightly low in the most expensive areas. Statewide medians; county rates vary widely."
+    },
+    "insurance": {
+      "name": "NAIC average annual HO-3 homeowners premium by state, republished by the Insurance Information Institute",
+      "url": "https://www.iii.org/fact-statistic/facts-statistics-homeowners-and-renters-insurance",
+      "asOf": "2022",
+      "note": "insuranceAnnual = average premium in dollars for an HO-3 owner-occupied policy, latest year published (2022). California from the CA Dept. of Insurance, Texas from the Texas Dept. of Insurance. Current quotes run higher; apply a dated uplift before using as an estimate."
+    },
+    "closing": {
+      "name": "LodeStar 2025 average purchase closing costs by state (with taxes), as published by Bankrate",
+      "url": "https://www.bankrate.com/real-estate/average-closing-costs-by-state/",
+      "asOf": "2025",
+      "note": "closingPct = average total closing costs (title, settlement, recording and transfer taxes) as a percent of the average sales price. Excludes lender fees, discount points, prepaids and escrow; all-in buyer cash to close typically runs 2-5%. US value = $4,528 / $433,632 from the same report."
+    }
+  },
+  "us": {
+    "propertyTaxPct": 0.94,
+    "insuranceAnnual": 1569,
+    "closingPct": 1.04
+  },
+  "states": {
+    "AK": {
+      "name": "Alaska",
+      "propertyTaxPct": 1.11,
+      "insuranceAnnual": 1129,
+      "closingPct": 0.72
+    },
+    "AL": {
+      "name": "Alabama",
+      "propertyTaxPct": 0.38,
+      "insuranceAnnual": 1748,
+      "closingPct": 0.9
+    },
+    "AR": {
+      "name": "Arkansas",
+      "propertyTaxPct": 0.55,
+      "insuranceAnnual": 1740,
+      "closingPct": 0.87
+    },
+    "AZ": {
+      "name": "Arizona",
+      "propertyTaxPct": 0.48,
+      "insuranceAnnual": 1018,
+      "closingPct": 0.73
+    },
+    "CA": {
+      "name": "California",
+      "propertyTaxPct": 0.7,
+      "insuranceAnnual": 1492,
+      "closingPct": 0.75
+    },
+    "CO": {
+      "name": "Colorado",
+      "propertyTaxPct": 0.48,
+      "insuranceAnnual": 2079,
+      "closingPct": 0.5
+    },
+    "CT": {
+      "name": "Connecticut",
+      "propertyTaxPct": 1.81,
+      "insuranceAnnual": 1814,
+      "closingPct": 0.87
+    },
+    "DC": {
+      "name": "District of Columbia",
+      "propertyTaxPct": 0.58,
+      "insuranceAnnual": 1384,
+      "closingPct": 2.24
+    },
+    "DE": {
+      "name": "Delaware",
+      "propertyTaxPct": 0.5,
+      "insuranceAnnual": 1103,
+      "closingPct": 3.06
+    },
+    "FL": {
+      "name": "Florida",
+      "propertyTaxPct": 0.76,
+      "insuranceAnnual": 2677,
+      "closingPct": 1.76
+    },
+    "GA": {
+      "name": "Georgia",
+      "propertyTaxPct": 0.77,
+      "insuranceAnnual": 1655,
+      "closingPct": 1.25
+    },
+    "HI": {
+      "name": "Hawaii",
+      "propertyTaxPct": 0.27,
+      "insuranceAnnual": 1431,
+      "closingPct": 0.65
+    },
+    "IA": {
+      "name": "Iowa",
+      "propertyTaxPct": 1.39,
+      "insuranceAnnual": 1268,
+      "closingPct": 0.56
+    },
+    "ID": {
+      "name": "Idaho",
+      "propertyTaxPct": 0.49,
+      "insuranceAnnual": 1002,
+      "closingPct": 0.64
+    },
+    "IL": {
+      "name": "Illinois",
+      "propertyTaxPct": 2.01,
+      "insuranceAnnual": 1343,
+      "closingPct": 1.41
+    },
+    "IN": {
+      "name": "Indiana",
+      "propertyTaxPct": 0.74,
+      "insuranceAnnual": 1191,
+      "closingPct": 0.69
+    },
+    "KS": {
+      "name": "Kansas",
+      "propertyTaxPct": 1.29,
+      "insuranceAnnual": 1583,
+      "closingPct": 0.81
+    },
+    "KY": {
+      "name": "Kentucky",
+      "propertyTaxPct": 0.75,
+      "insuranceAnnual": 1359,
+      "closingPct": 0.9
+    },
+    "LA": {
+      "name": "Louisiana",
+      "propertyTaxPct": 0.55,
+      "insuranceAnnual": 2603,
+      "closingPct": 1.17
+    },
+    "MA": {
+      "name": "Massachusetts",
+      "propertyTaxPct": 1.07,
+      "insuranceAnnual": 1871,
+      "closingPct": 0.78
+    },
+    "MD": {
+      "name": "Maryland",
+      "propertyTaxPct": 0.97,
+      "insuranceAnnual": 1392,
+      "closingPct": 2.02
+    },
+    "ME": {
+      "name": "Maine",
+      "propertyTaxPct": 1.02,
+      "insuranceAnnual": 1077,
+      "closingPct": 0.86
+    },
+    "MI": {
+      "name": "Michigan",
+      "propertyTaxPct": 1.25,
+      "insuranceAnnual": 1056,
+      "closingPct": 1.09
+    },
+    "MN": {
+      "name": "Minnesota",
+      "propertyTaxPct": 1.02,
+      "insuranceAnnual": 1774,
+      "closingPct": 0.83
+    },
+    "MO": {
+      "name": "Missouri",
+      "propertyTaxPct": 0.85,
+      "insuranceAnnual": 1668,
+      "closingPct": 0.58
+    },
+    "MS": {
+      "name": "Mississippi",
+      "propertyTaxPct": 0.72,
+      "insuranceAnnual": 1907,
+      "closingPct": 0.96
+    },
+    "MT": {
+      "name": "Montana",
+      "propertyTaxPct": 0.72,
+      "insuranceAnnual": 1639,
+      "closingPct": 0.67
+    },
+    "NC": {
+      "name": "North Carolina",
+      "propertyTaxPct": 0.66,
+      "insuranceAnnual": 1621,
+      "closingPct": 0.58
+    },
+    "ND": {
+      "name": "North Dakota",
+      "propertyTaxPct": 0.99,
+      "insuranceAnnual": 1325,
+      "closingPct": 0.68
+    },
+    "NE": {
+      "name": "Nebraska",
+      "propertyTaxPct": 1.49,
+      "insuranceAnnual": 1869,
+      "closingPct": 0.71
+    },
+    "NH": {
+      "name": "New Hampshire",
+      "propertyTaxPct": 1.66,
+      "insuranceAnnual": 1188,
+      "closingPct": 1.29
+    },
+    "NJ": {
+      "name": "New Jersey",
+      "propertyTaxPct": 2.11,
+      "insuranceAnnual": 1417,
+      "closingPct": 0.87
+    },
+    "NM": {
+      "name": "New Mexico",
+      "propertyTaxPct": 0.7,
+      "insuranceAnnual": 1322,
+      "closingPct": 0.82
+    },
+    "NV": {
+      "name": "Nevada",
+      "propertyTaxPct": 0.47,
+      "insuranceAnnual": 948,
+      "closingPct": 0.81
+    },
+    "NY": {
+      "name": "New York",
+      "propertyTaxPct": 1.55,
+      "insuranceAnnual": 1628,
+      "closingPct": 2.32
+    },
+    "OH": {
+      "name": "Ohio",
+      "propertyTaxPct": 1.31,
+      "insuranceAnnual": 995,
+      "closingPct": 1.06
+    },
+    "OK": {
+      "name": "Oklahoma",
+      "propertyTaxPct": 0.8,
+      "insuranceAnnual": 2268,
+      "closingPct": 1.09
+    },
+    "OR": {
+      "name": "Oregon",
+      "propertyTaxPct": 0.81,
+      "insuranceAnnual": 893,
+      "closingPct": 0.66
+    },
+    "PA": {
+      "name": "Pennsylvania",
+      "propertyTaxPct": 1.3,
+      "insuranceAnnual": 1120,
+      "closingPct": 2.33
+    },
+    "RI": {
+      "name": "Rhode Island",
+      "propertyTaxPct": 1.21,
+      "insuranceAnnual": 2074,
+      "closingPct": 0.67
+    },
+    "SC": {
+      "name": "South Carolina",
+      "propertyTaxPct": 0.48,
+      "insuranceAnnual": 1571,
+      "closingPct": 0.68
+    },
+    "SD": {
+      "name": "South Dakota",
+      "propertyTaxPct": 1.06,
+      "insuranceAnnual": 1756,
+      "closingPct": 0.39
+    },
+    "TN": {
+      "name": "Tennessee",
+      "propertyTaxPct": 0.5,
+      "insuranceAnnual": 1492,
+      "closingPct": 1.2
+    },
+    "TX": {
+      "name": "Texas",
+      "propertyTaxPct": 1.49,
+      "insuranceAnnual": 2397,
+      "closingPct": 0.93
+    },
+    "UT": {
+      "name": "Utah",
+      "propertyTaxPct": 0.52,
+      "insuranceAnnual": 937,
+      "closingPct": 0.72
+    },
+    "VA": {
+      "name": "Virginia",
+      "propertyTaxPct": 0.73,
+      "insuranceAnnual": 1332,
+      "closingPct": 1.39
+    },
+    "VT": {
+      "name": "Vermont",
+      "propertyTaxPct": 1.59,
+      "insuranceAnnual": 1109,
+      "closingPct": 2.34
+    },
+    "WA": {
+      "name": "Washington",
+      "propertyTaxPct": 0.81,
+      "insuranceAnnual": 1151,
+      "closingPct": 0.86
+    },
+    "WI": {
+      "name": "Wisconsin",
+      "propertyTaxPct": 1.42,
+      "insuranceAnnual": 957,
+      "closingPct": 0.78
+    },
+    "WV": {
+      "name": "West Virginia",
+      "propertyTaxPct": 0.53,
+      "insuranceAnnual": 1113,
+      "closingPct": 1.16
+    },
+    "WY": {
+      "name": "Wyoming",
+      "propertyTaxPct": 0.57,
+      "insuranceAnnual": 1596,
+      "closingPct": 0.65
+    }
+  }
+}
