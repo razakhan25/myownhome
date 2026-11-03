@@ -2,6 +2,10 @@
 
 First-time homebuyer planner for Dallas–Fort Worth. Answers "when can I buy, at what price, and what do I do this month?" Live at https://myownhome.propmatrix.ai (Vercel project `myownhome`, team `flipy2`).
 
+Background reading before any product work:
+- `docs/product-context.md` — vision, decisions made so far and why, deferred scope, monetization and risks
+- `docs/treasury-teardown.md` — full research on Treasury.sh, the app this architecture is modeled on
+
 ## Stack
 - Next.js 15 (App Router) + React 19, TypeScript 5 (do NOT upgrade to TS 7: Next 15 can't resolve `@/` paths with it)
 - Supabase (project `myownhome`, ref `gfgdgpymshlhhqjtwkai`, us-east-1): magic-link auth + Postgres with RLS
