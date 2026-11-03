@@ -1,6 +1,6 @@
 # MyOwnHome — context for Claude Code
 
-First-time homebuyer planner for any US metro, modeled on Treasury.sh: link banks (Plaid, read-only) → clean cash-flow data → deterministic home-buying math → tool-calling advisor. Answers "when can I buy, at what price, and what do I do this month?" Live at https://myownhome.propmatrix.ai (Vercel project `myownhome`, team `flipy2`; push `main` to deploy, commit author `Raza Khan <347554855+razakhan25@users.noreply.github.com>`).
+First-time homebuyer planner for any US metro, modeled on Treasury.sh: link banks (Plaid, read-only) → clean cash-flow data → deterministic home-buying math → tool-calling advisor. Answers "when can I buy, at what price, and what do I do this month?" Live at https://myownhome.propmatrix.ai (Vercel project `myownhome`, team `flipy2`). The Vercel project is NOT connected to the GitHub repo, so pushing `main` does not deploy: run `npx vercel deploy --prod --yes` from the repo after pushing (the folder is linked via `.vercel/`, which is gitignored), or connect the repo once in Vercel → Project → Settings → Git. Commit author `Raza Khan <347554855+razakhan25@users.noreply.github.com>`.
 
 Background reading before any product work:
 - `docs/product-context.md` — vision, early decisions, deferred scope, monetization and risks
